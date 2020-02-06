@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e7dd35dda.js" crossorigin="anonymous"></script>
+  </head>
+    <title>ajx Example</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="lds-ripple"><div></div><div></div></div>
+        </div>
+        <form id="myForm">
+            <table class="table table-bordered mt-3">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><label for="first"></label><input type="text" name="first"></td>
+                    <td><label for="last"></label><input type="text" name="last"></td>
+                    <td><label for="handle"></label><input type="text" name="handle"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-success">Send</button></td>
+                    <td style="text-align: center;">
+                        <!-- <div class="spinner_show">
+                            <div class="spinner-border text-danger" role="status">
+                                <span id="spinner" class="sr-only">Loading...</span>                         
+                            </div>                        
+                        </div> -->
+                        <div class="spinner_show"><img src="squad_preloader_pynk.gif" style="margin: auto;"><span id="textLoading">Esperando Data</span></div>                    
+                        
+                        
+                        <div id="resultado">
+                            <span style="margin-left: 15px">Ready </span>
+                            <span><i class="fas fa-check"></i></span>
+                        </div>
+                        
+                    </td>                    
+                    <td colspan="2">Remember to activate your console</td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>METHOD</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td>new XMLHttpRequest()</td>
+                    <td>Creates a new XMLHttpRequest object</td>
+                </tr>
+                <tr>
+                    <td>abort()</td>
+                    <td>Cancels the current request</td>
+                </tr>
+                <tr>
+                    <td>getAllResponseHeaders()</td>
+                    <td>Returns header information</td>
+                </tr>
+                <tr>
+                    <td>getResponseHeader()</td>
+                    <td>Returns specific header information</td>
+                </tr>
+                <tr>
+                    <td>open(method,url,async,user,psw)</td>
+                    <td>Specifies the request
+
+                        <p><strong>method:</strong> the request type GET or POST</p>
+                        <p><strong>url:</strong> the file location</p>
+                        <p><strong>async:</strong> true (asynchronous) or false (synchronous)</p>
+                        <p><strong>user:</strong> optional user name</p>
+                        <p><strong>psw:</strong> optional password</p></td>
+                </tr>
+                <tr>
+                    <td>send()</td>
+                    <td>Sends the request to the server
+                        <p>Used for GET requests</p></td>
+                </tr>
+                <tr>
+                    <td>send(string)</td>
+                    <td>Sends the request to the server.
+                        <p>Used for POST requests</p></td>
+                </tr>
+                <tr>
+                    <td>setRequestHeader()</td>
+                    <td>Adds a label/value pair to the header to be sent</td>
+                </tr>
+                <tr style="text-align: center; font-weight: bold;"><td colspan="2">XMLHttpRequest Object Properties</td></tr>
+                <tr>
+                    <td>onreadystatechange</td>
+                    <td>Defines a function to be called when the readyState property changes</td>
+                </tr>
+                <tr>
+                    <td>readyState</td>
+                    <td>Holds the status of the XMLHttpRequest.
+                        <p>0: request not initialized</p>
+                        <p>1: server connection established</p>
+                        <p>2: request received</p>
+                        <p>3: processing request</p>
+                        <p>4: request finished and response is ready</p></td>
+                </tr>
+                <tr>
+                    <td>responseText</td>
+                    <td>Returns the response data as a string</td>
+                </tr>
+                <tr>
+                    <td>responseXML</td>
+                    <td>Returns the response data as XML data</td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>Returns the status-number of a request
+                        <p>200: "OK"</p>
+                        <p>403: "Forbidden"</p>
+                        <p>404: "Not Found"</p></td>
+                </tr>
+                <tr>
+                    <td>statusText</td>
+                    <td>Returns the status-text (e.g. "OK" or "Not Found")</td>
+                </tr>
+            </table>
+        </div>
+    <>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js.js"></script>    
+</body>
+</html>

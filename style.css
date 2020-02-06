@@ -1,0 +1,17 @@
+#spinner{
+    display: flex;
+    width: 100%;
+}
+td{
+    text-align: center;
+}
+td .spinner_show{
+    display: none;
+}
+#textLoading{
+    margin-left: 6px;
+    color: rgb(212, 12, 146);
+}
+td #resultado{
+    display: none;
+}
